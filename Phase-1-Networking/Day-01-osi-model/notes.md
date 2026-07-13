@@ -79,7 +79,7 @@ Transmits raw bits over the physical medium.
 
 # 🔬 Practical Implementation
 
-## Practical 1 – DNS Packet Analysis (Layer 7)
+## Practical 1 — DNS Packet Analysis (Layer 7)
 
 Captured live network traffic in Wireshark while browsing a website and applied the following display filter:
 
@@ -98,13 +98,15 @@ This displayed DNS query and response packets used to resolve the website's doma
 <details>
 <summary>📷 DNS Packet Analysis Screenshot</summary>
 
-![DNS Packet Analysis](media/dns-packet-analysis.png)
+<br>
+
+![DNS Packet Analysis](dns-packet-analysis.png)
 
 </details>
 
 ---
 
-## Practical 2 – Ethernet II Frame Analysis (Layer 2)
+## Practical 2 — Ethernet II Frame Analysis (Layer 2)
 
 Expanded a captured DNS packet and inspected the **Ethernet II** header to examine Layer 2 information.
 
@@ -119,7 +121,9 @@ This demonstrated that Layer 2 communication relies on MAC addresses for local n
 <details>
 <summary>📷 Ethernet II Frame Screenshot</summary>
 
-![Ethernet II Frame](media/ethernet-ii-frame.png)
+<br>
+
+![Ethernet II Frame](ethernet-ii-frame.png)
 
 </details>
 
@@ -132,7 +136,7 @@ This demonstrated that Layer 2 communication relies on MAC addresses for local n
 The TCP/IP Model is the networking model used on the Internet today. It simplifies the OSI Model into four layers.
 
 | TCP/IP Layer | Corresponding OSI Layer(s) |
-|---------------|----------------------------|
+|--------------|----------------------------|
 | Application | Application, Presentation, Session |
 | Transport | Transport |
 | Internet | Network |
