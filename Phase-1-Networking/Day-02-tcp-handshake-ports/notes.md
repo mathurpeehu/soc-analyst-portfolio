@@ -1,13 +1,13 @@
-# Phase 1 — Day 2: TCP/IP Deep Dive — The 3-Way Handshake & Port Numbers
+# 🌐 Day 2: TCP/IP Deep Dive — The 3-Way Handshake & Port Numbers
 
-## Overview
+## 📖 Overview
 This session moved from OSI theory into the mechanics of how TCP actually
 establishes a connection before any data transfer occurs, along with how
 port numbers direct traffic to the correct application on a device.
 
-## Core Concepts
+## 🧠 Core Concepts
 
-### The TCP 3-Way Handshake
+### 🤝 The TCP 3-Way Handshake
 Every TCP connection begins with a fixed three-step exchange before any
 application data is sent:
 1. **SYN** — the client sends a synchronize packet to initiate the
@@ -19,7 +19,7 @@ application data is sent:
 Only after this sequence completes does actual data — such as a TLS
 handshake or HTTP request — begin flowing.
 
-### SYN Flood Attacks
+### 🚨 SYN Flood Attacks
 A SYN flood is a Denial-of-Service technique that exploits the handshake's
 design: an attacker sends a high volume of SYN packets but never completes
 the final ACK. The server allocates and holds resources for each half-open
@@ -27,16 +27,16 @@ connection while waiting for a response that never arrives, eventually
 exhausting available connection capacity and preventing legitimate clients
 from connecting.
 
-### Port Numbers
+### 🔢 Port Numbers
 An IP address routes data to a device; a port number routes it to the
 correct application on that device. Key ports relevant to SOC work include
 22 (SSH), 53 (DNS), 80/443 (HTTP/HTTPS), 445 (SMB), and 3389 (RDP) — the
 latter two being frequent targets for exploitation and brute-force attacks
 due to their common exposure on internet-facing systems.
 
-## Practical Exercises
+## 🛠️ Practical Exercises
 
-### 1. Capturing the SYN and SYN-ACK Packets
+### 1. 📡 Capturing the SYN and SYN-ACK Packets
 Using Wireshark with the filter `tcp.flags.syn==1`, isolated the initial
 handshake packets for an HTTPS connection. Identified the client's SYN
 packet (ephemeral source port to destination port 443) and the server's
@@ -50,7 +50,7 @@ relationship between request and reply.
 
 </details>
 
-### 2. Locating the Final ACK
+### 2. ✅ Locating the Final ACK
 Identified the closing ACK packet completing the handshake for the same
 connection, confirming via matching source/destination ports and
 sequence/acknowledgment numbers that it represented the third and final
@@ -66,7 +66,7 @@ destination hostname prior to encryption being established.
 
 </details>
 
-### 3. Reviewing Active Connections (`netstat -ano`)
+### 3. 💻 Reviewing Active Connections (`netstat -ano`)
 Ran `netstat -ano` to list active TCP and UDP connections on the local
 machine. Reviewed established connections, confirming remote port 443
 (HTTPS) usage, and noted a connection in the `CLOSE_WAIT` state — indicating
@@ -81,7 +81,7 @@ recognizing beyond just `ESTABLISHED`.
 
 </details>
 
-## Research: RDP Brute-Force Attacks
+## 🔍 Research: RDP Brute-Force Attacks
 Port 3389 (RDP) is a frequent target for brute-force attacks when exposed
 directly to the internet, as attackers can repeatedly attempt automated
 username/password combinations until valid credentials are found. In logs,
@@ -89,7 +89,7 @@ this typically appears as a high volume of failed authentication attempts
 from one or multiple source IPs, often followed by account lockouts or,
 in a successful compromise, a login following a sustained failure pattern.
 
-## SOC Analyst Relevance
+## 🛡️ SOC Analyst Relevance
 - Recognizing an abnormal volume of SYN packets without corresponding
   completed handshakes is a direct indicator of a SYN flood in progress.
 - Port numbers provide immediate triage context — unexpected external
@@ -99,7 +99,7 @@ in a successful compromise, a login following a sustained failure pattern.
   states like `CLOSE_WAIT` or an unusually high number of half-open
   connections can indicate abnormal behavior.
 
-## Key Takeaways
+## 🎯 Key Takeaways
 - The 3-way handshake (SYN, SYN-ACK, ACK) must complete before any
   application-layer data transfer begins.
 - SYN floods work specifically because servers must reserve resources
