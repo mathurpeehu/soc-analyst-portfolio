@@ -46,7 +46,7 @@ relationship between request and reply.
 <details>
 <summary>📷 Screenshot: SYN / SYN-ACK Handshake Capture</summary>
 
-![TCP SYN and SYN-ACK Packets](screenshots/wireshark-tcp-syn-synack-handshake.png)
+![TCP SYN and SYN-ACK Packets](./wireshark-tcp-syn-synack-handshake.png)
 
 </details>
 
@@ -62,7 +62,7 @@ destination hostname prior to encryption being established.
 <details>
 <summary>📷 Screenshot: TCP Handshake — Final ACK Completion</summary>
 
-![TCP Handshake ACK Completion](screenshots/wireshark-tcp-handshake-ack-completion.png)
+![TCP Handshake ACK Completion](./wireshark-tcp-handshake-ack-completion.png)
 
 </details>
 
@@ -77,7 +77,7 @@ recognizing beyond just `ESTABLISHED`.
 <details>
 <summary>📷 Screenshot: netstat Active Connections</summary>
 
-![netstat -ano Output](screenshots/netstat-established-connections.png)
+![netstat -ano Output](./netstat-established-connections.png)
 
 </details>
 
