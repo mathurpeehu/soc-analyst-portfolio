@@ -53,6 +53,13 @@ local subnet mask (`255.255.255.0`), converted it to CIDR notation (`/24`),
 and calculated the usable host capacity (254 addresses) for the local
 network segment.
 
+<details>
+<summary>📸 Practical Implementation</summary>
+
+![ipconfig /all Output](./Media/ipconfig-all-subnet-details.png)
+
+</details>
+
 ## 🔍 Research: RFC 1918 Private IP Ranges
 
 Identified the three official private IPv4 ranges defined by RFC 1918:
