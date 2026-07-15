@@ -56,7 +56,7 @@ network segment.
 <details>
 <summary>📸 Practical Implementation</summary>
 
-![ipconfig /all Output](./Media/ipconfig-all-subnet-details.png)
+![ipconfig /all Output](./ipconfig-all-subnet-details.png)
 
 </details>
 
