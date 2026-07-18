@@ -101,7 +101,7 @@ spoofed source from ever completing a connection.
 
 ## 💡 Key Takeaways
 - TCP prioritizes reliability via a handshake and ordered delivery; UDP
-  prioritizes speed with no such guarantees.
+  prioritizes speed with no such guarantees. 
 - SSH secures its session using its own key exchange (Diffie-Hellman/ECDH),
   independent of TLS.
 - UDP's lack of a handshake is the exact mechanical reason it enables
