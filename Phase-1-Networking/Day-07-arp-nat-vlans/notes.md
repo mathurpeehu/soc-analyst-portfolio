@@ -51,7 +51,7 @@ entry represents an actual physical device.
 <details>
 <summary>📷 Screenshot: ARP Cache — Default Gateway Mapping</summary>
 
-![ARP Cache Table](screenshots/arp-cache-default-gateway.png)
+![ARP Cache Table](./arp-cache-default-gateway.png)
 
 </details>
 
@@ -67,7 +67,7 @@ broader network architecture level.
 <details>
 <summary>📷 Screenshot: Enterprise VLAN Network Diagram</summary>
 
-![Enterprise VLAN Diagram](screenshots/enterprise-vlan-network-diagram.png)
+![Enterprise VLAN Diagram](./enterprise-vlan-network-diagram.png)
 
 </details>
 
