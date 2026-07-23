@@ -1,4 +1,4 @@
-# 📡 Day 9: Wireless Networking Fundamentals — WPA2/WPA3 & Attacks
+# 📡 Day 8: Wireless Networking Fundamentals — WPA2/WPA3 & Attacks
 
 ## 🎯 Overview
 This session covered wireless-specific security concepts — Wi-Fi security
