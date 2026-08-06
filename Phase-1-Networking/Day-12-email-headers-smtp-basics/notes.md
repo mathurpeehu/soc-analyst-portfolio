@@ -47,7 +47,7 @@ MX server (`mx.google.com`) → final delivery to inbox — confirming the
 <details>
 <summary>📷 Screenshot: Raw Headers — Received Chain</summary>
 
-![Received Header Chain](screenshots/gmail-raw-headers-received-chain.png)
+![Received Header Chain](./gmail-raw-headers-received-chain.png)
 
 </details>
 
@@ -62,7 +62,7 @@ the email was legitimate, not spoofed.
 <details>
 <summary>📷 Screenshot: SPF/DKIM/DMARC Authentication Results</summary>
 
-![Authentication Results](screenshots/gmail-spf-dkim-dmarc-results.png)
+![Authentication Results](./gmail-spf-dkim-dmarc-results.png)
 
 </details>
 
