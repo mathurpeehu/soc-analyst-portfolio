@@ -115,7 +115,7 @@ running entirely malicious code internally.
 <details>
 <summary>🪟 lsass.exe — Path & Properties Verified</summary>
 
-![lsass.exe Properties](screenshots/lsass-exe-properties-system32.png)
+![lsass.exe Properties](./lsass-exe-properties-system32.png)
 
 - **Location:** `C:\Windows\System32` ✅
 - **Description:** Credential Guard & VBS Key Isolation
@@ -126,7 +126,7 @@ running entirely malicious code internally.
 <details>
 <summary>🪟 svchost.exe — Path & Properties Verified</summary>
 
-![svchost.exe Properties](screenshots/svchost-exe-properties-system32.png)
+![svchost.exe Properties](./svchost-exe-properties-system32.png)
 
 - **Location:** `C:\Windows\System32` ✅
 - **Description:** Host Process for Windows Services
@@ -137,7 +137,7 @@ running entirely malicious code internally.
 <details>
 <summary>💻 svchost.exe — Command-Line Flags via PowerShell</summary>
 
-![svchost CommandLine](screenshots/svchost-commandline-powershell.png)
+![svchost CommandLine](./svchost-commandline-powershell.png)
 
 Command run:
 ```powershell
