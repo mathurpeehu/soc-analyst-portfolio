@@ -1,4 +1,4 @@
-# 🐧 Phase 2 — Day 6: Linux Processes, Services & Persistence Mechanisms
+# 🐧 Day 6: Linux Processes, Services & Persistence Mechanisms
 
 ## 🎯 Overview
 Investigated how Linux manages running processes and services, mapped all four
