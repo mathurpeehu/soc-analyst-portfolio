@@ -1,4 +1,4 @@
-# 📋 Phase 2 — Day 7: Windows Event Log Architecture & Forensic Log Analysis
+# 📋 Day 7: Windows Event Log Architecture & Forensic Log Analysis
 
 ## 🎯 Overview
 Studied how Windows Event Logging works at an architectural level — providers,
