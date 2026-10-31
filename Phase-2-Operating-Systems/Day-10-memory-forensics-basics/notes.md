@@ -1,4 +1,4 @@
-# 🧠 Phase 2 — Day 10: Memory Forensics Basics
+# 🧠 Day 10: Memory Forensics Basics
 
 ## 🎯 Overview
 Studied what exists only in RAM, how memory is acquired and analysed, and
